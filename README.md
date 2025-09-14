@@ -1,4 +1,4 @@
-# 🐾 OSINT ToolCat
+# 🐈 OSINT ToolCat
 
 OSINT ToolCat is a curated website cataloging publicly available OSINT (Open-Source Intelligence) tools. Explore tools for reconnaissance, social media investigations, dark web research, and more.
 
