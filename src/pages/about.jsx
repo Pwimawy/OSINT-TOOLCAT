@@ -28,7 +28,7 @@ export default function About() {
           <i class="bx bxl-github" />
         </a>
         <a
-          href="https://www.linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/marklestercabalbag"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-400"
@@ -36,7 +36,7 @@ export default function About() {
           <i class="bx bxl-linkedin-square" />
         </a>
         <a
-          href="https://facebook.com/yourusername"
+          href="https://facebook.com/Pwimawy"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-500"

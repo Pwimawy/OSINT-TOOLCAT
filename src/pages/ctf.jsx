@@ -49,6 +49,17 @@ export default function CTF() {
               {challenge.difficulty}
             </span>
 
+            {/* Render optional image from ctfData */}
+            {challenge.image && (
+              <div className="mb-4">
+                <img
+                  src={challenge.image}
+                  alt={`Challenge ${challenge.title}`}
+                  className="w-full max-w-md mx-auto rounded-lg border border-gray-700 shadow-md"
+                />
+              </div>
+            )}
+
             <div className="mb-4">
               <p className="font-semibold">Challenge:</p>
               <p className="text-gray-300">{challenge.question}</p>

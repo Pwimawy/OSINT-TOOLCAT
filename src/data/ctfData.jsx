@@ -1,3 +1,7 @@
+import saintTropez from "../assets/saint-tropez.jpg";
+import metadata from "../assets/metadata.jpg";
+import geosint from "../assets/geosint.jpg";
+
 export const challenges = [
   {
     title: "Social Media Sleuth",
@@ -14,9 +18,8 @@ export const challenges = [
     difficulty: "Medium",
     question: "Identify the city where this picture was taken.",
     hint: "Look for unique landmarks, signs, or text in the image.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Eiffel_Tower_from_the_Trocadero%2C_Paris_5_April_2019.jpg",
-    answer: "Paris, France (Eiffel Tower).",
+    image: saintTropez,
+    answer: "Saint-Tropez, France.",
   },
   {
     title: "Metadata Extraction",
@@ -24,37 +27,25 @@ export const challenges = [
     difficulty: "Medium",
     question: "Download the sample image and find the camera model used.",
     hint: "Use exiftool or an online EXIF viewer.",
-    image:
-      "https://raw.githubusercontent.com/ianare/exif-samples/master/jpg/exif-org.jpg",
+    image: metadata,
     answer: "Camera Model: Canon EOS 40D.",
-  },
-  {
-    title: "Hidden Message",
-    description: "Discover a secret hidden in plain sight.",
-    difficulty: "Easy",
-    question:
-      "Open this image and look carefully. What hidden text can you find?",
-    hint: "Adjust brightness/contrast or use a steganography tool.",
-    image: "https://stegonline.georgeom.net/img/stego.png",
-    answer: "The hidden message is 'OSINT ROCKS'.",
   },
   {
     title: "Domain Intelligence",
     description: "Investigate a suspicious domain name.",
     difficulty: "Hard",
     question:
-      "Investigate the domain `example-ctf.com`. What country is its registrar located in?",
+      "Investigate the domain `tracelabs.org`. What state is its registrar located in?",
     hint: "Perform a WHOIS lookup.",
-    answer: "United States (registered via NameCheap).",
+    answer: "Arizona",
   },
   {
     title: "Advanced Geolocation",
     description: "A tough one for true OSINT masters.",
     difficulty: "Hard",
-    question: "Where was this picture taken? Be specific (city & landmark).",
+    question: "Where was this picture taken? Be specific (city).",
     hint: "Look for environmental clues: vegetation, architecture, shadows, language on signs.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/84/Christ_the_Redeemer_-_Rio.jpg",
-    answer: "Rio de Janeiro, Brazil — Christ the Redeemer statue.",
+    image: geosint,
+    answer: "Pasay City, Manila, Philippines",
   },
 ];

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import LogoBlack from "../assets/logoblack.png";
+import ScrollDownIndicator from "./ScrollDown";
 
 export default function Navbar({ setScrolledState }) {
   const [scrolled, setScrolled] = useState(false);
@@ -47,46 +48,54 @@ export default function Navbar({ setScrolledState }) {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out shadow-md
-      ${scrolled ? "h-16" : "h-screen"}
-bg-gray-900 text-white`}
+        ${scrolled ? "h-16" : "h-screen"} bg-gray-900 text-white`}
     >
       <div
         className={`transition-all duration-500 ease-in-out h-full px-6
-        ${
-          scrolled
-            ? "grid grid-cols-2 items-center px-8"
-            : "flex flex-col items-center justify-center gap-8"
-        }`}
+          ${
+            scrolled
+              ? "grid grid-cols-2 items-center px-8"
+              : "flex flex-col items-center justify-center gap-4 text-center"
+          }`}
       >
+        {/* Logo + Tagline */}
         <div
-          className={`transition-all duration-500 ${
-            scrolled ? "justify-self-start" : ""
+          className={`transition-all duration-500 flex flex-col ${
+            scrolled ? "justify-self-start items-start" : "items-center"
           }`}
         >
           <img
             src={LogoBlack}
             alt="Logo"
             className={`transition-all duration-500 ${
-              scrolled ? "h-12" : "w-[280px]"
+              scrolled ? "h-12 w-auto" : "w-[280px] h-auto"
             }`}
             style={{ objectFit: "contain" }}
           />
+          {!scrolled && (
+            <p className="mt-4 mb-10 text-lg text-gray-300 max-w-md opacity-100 transition-opacity duration-500 font-bold">
+              A curated collection of tools to assist with <br />
+              Open-Source Intelligence investigations.
+            </p>
+          )}
+          {/* Inside the logo/tagline div, full-screen only */}
+          {!scrolled && <ScrollDownIndicator />}
         </div>
 
-        <div
-          className={`flex gap-8 text-xl font-medium transition-all duration-500
-    ${scrolled ? "justify-self-end pr-8" : "flex-col text-3xl"}`}
-        >
-          <a href="#home" className={linkClass("home")}>
-            Home
-          </a>
-          <a href="#ctf" className={linkClass("ctf")}>
-            CTF
-          </a>
-          <a href="#about" className={linkClass("about")}>
-            About
-          </a>
-        </div>
+        {/* Nav Links (only show when scrolled) */}
+        {scrolled && (
+          <div className="flex gap-8 text-xl font-medium justify-self-end pr-8">
+            <a href="#home" className={linkClass("home")}>
+              Home
+            </a>
+            <a href="#ctf" className={linkClass("ctf")}>
+              CTF
+            </a>
+            <a href="#about" className={linkClass("about")}>
+              About
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
