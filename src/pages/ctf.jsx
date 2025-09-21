@@ -20,15 +20,15 @@ export default function CTF() {
 
   return (
     <div id="ctf" className="min-h-screen bg-gray-950 text-white p-8 mt-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">
+      <h1 className="text-4xl font-bold mb-8 text-center jetbrains-mono-header">
         Capture The Flag (CTF)
       </h1>
-      <p className="text-center text-gray-400 mb-12">
+      <p className="text-xl text-center text-gray-400 mb-12 vt323-regular">
         Test your OSINT and investigation skills through real-world inspired
         challenges.
       </p>
 
-      <div className="grid gap-8 max-w-4xl mx-auto">
+      <div className="grid gap-8 max-w-4xl mx-auto ">
         {challenges.map((challenge, index) => (
           <div
             key={index}

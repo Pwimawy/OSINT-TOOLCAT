@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import LogoBlack from "../assets/logoblack.png";
 import ScrollDownIndicator from "./ScrollDown";
+import DecryptedText from "./DecryptedText";
 
 export default function Navbar({ setScrolledState }) {
   const [scrolled, setScrolled] = useState(false);
@@ -73,12 +74,18 @@ export default function Navbar({ setScrolledState }) {
             style={{ objectFit: "contain" }}
           />
           {!scrolled && (
-            <p className="mt-4 mb-10 text-lg text-gray-300 max-w-md opacity-100 transition-opacity duration-500 font-bold">
-              A curated collection of tools to assist with <br />
-              Open-Source Intelligence investigations.
-            </p>
+            <div style={{ marginTop: "2rem" }}>
+              <DecryptedText
+                text={`A CURATED COLLECTION OF TOOLS TO ASSIST WITH
+OPEN-SOURCE INTELLIGENCE INVESTIGATIONS`}
+                animateOn="view"
+                maxIterations={40}
+                revealDirection="center"
+                className="text-2xl text-gray-300 font-bold vt323-regular"
+                parentClassName="max-w-md opacity-100 transition-opacity duration-2000"
+              />
+            </div>
           )}
-          {/* Inside the logo/tagline div, full-screen only */}
           {!scrolled && <ScrollDownIndicator />}
         </div>
 

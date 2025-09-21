@@ -6,6 +6,9 @@ export default function About() {
       id="about"
       className="flex flex-col items-center justify-center min-h-screen text-white px-6 text-center"
     >
+      <h1 className="text-4xl font-bold mb-20 text-center jetbrains-mono-header">
+        Developer
+      </h1>
       <img
         src={profilePic}
         alt="Profile"
@@ -13,9 +16,9 @@ export default function About() {
       />
       <h1 className="text-3xl font-bold mb-2">Pwimawy</h1>
       <p className="text-gray-300 max-w-md mb-6">
-        Hi! I created this website as part of my project to share useful OSINT
-        tools, challenges, and resources. My goal is to help people learn, grow,
-        and contribute to the community while making knowledge more accessible.
+        I built this website to help myself and others, including law
+        enforcement and ethical hackers, conduct cyber patrolling and
+        open-source reconnaissance.
       </p>
 
       <div className="flex space-x-6 text-2xl">
@@ -44,7 +47,7 @@ export default function About() {
           <i class="bx bxl-facebook-circle" />
         </a>
         <a
-          href="https://youtube.com/yourchannel"
+          href="https://www.youtube.com/@Pwimawy"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-red-500"
