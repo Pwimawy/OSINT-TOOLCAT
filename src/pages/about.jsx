@@ -15,7 +15,7 @@ export default function About() {
         className="w-52 h-52 rounded-full mb-4 shadow-lg border-4 border-gray-700 object-cover"
       />
       <h1 className="text-3xl font-bold mb-2">
-        Mark Lester Cabalbag{" "}
+        Mark Lester Cabalbag
         <span className="text-3xl font-bold mb-2">(Pwimawy)</span>
       </h1>
       <p className="text-gray-300 max-w-md mb-6">
