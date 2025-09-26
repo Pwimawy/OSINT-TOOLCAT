@@ -79,7 +79,7 @@ export default function Navbar({ setScrolledState }) {
                 text={`A CURATED COLLECTION OF TOOLS TO ASSIST WITH
 OPEN-SOURCE INTELLIGENCE INVESTIGATIONS`}
                 animateOn="view"
-                maxIterations={40}
+                maxIterations={20}
                 revealDirection="center"
                 className="text-2xl text-gray-300 font-bold vt323-regular"
                 parentClassName="max-w-md opacity-100 transition-opacity duration-2000"

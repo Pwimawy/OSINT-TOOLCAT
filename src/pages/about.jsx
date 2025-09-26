@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center min-h-screen text-white px-6 text-center"
+      className="flex flex-col mt-30 items-center justify-center min-h-screen text-white px-6 text-center"
     >
       <h1 className="text-4xl font-bold mb-20 text-center jetbrains-mono-header">
         Developer
@@ -12,9 +12,12 @@ export default function About() {
       <img
         src={profilePic}
         alt="Profile"
-        className="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-gray-700 object-cover"
+        className="w-52 h-52 rounded-full mb-4 shadow-lg border-4 border-gray-700 object-cover"
       />
-      <h1 className="text-3xl font-bold mb-2">Pwimawy</h1>
+      <h1 className="text-3xl font-bold mb-2">
+        Mark Lester Cabalbag{" "}
+        <span className="text-3xl font-bold mb-2">(Pwimawy)</span>
+      </h1>
       <p className="text-gray-300 max-w-md mb-6">
         I built this website to help myself and others, including law
         enforcement and ethical hackers, conduct cyber patrolling and
