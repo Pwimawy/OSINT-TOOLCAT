@@ -16,7 +16,7 @@ export default function About() {
       />
       <h1 className="text-3xl font-bold mb-2">
         Mark Lester Cabalbag
-        <span className="text-3xl font-bold mb-2">(Pwimawy)</span>
+        <span className="text-3xl font-bold text-gray-300"> (Pwimawy)</span>
       </h1>
       <p className="text-gray-300 max-w-md mb-6">
         I built this website to help myself and others, including law
@@ -24,7 +24,7 @@ export default function About() {
         open-source reconnaissance.
       </p>
 
-      <div className="flex space-x-6 text-2xl">
+      <div className="flex space-x-6 text-2xl mb-20">
         <a
           href="https://github.com/pwimawy"
           target="_blank"

@@ -11,8 +11,7 @@ export default function ScrollDownIndicator() {
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
       </svg>
-      {/* Optional text */}
-      <span className="text-gray-400 mt-2 text-sm">Scroll Down</span>
+      <span className="text-gray-300 mt-2 text-sm">Scroll Down</span>
     </div>
   );
 }

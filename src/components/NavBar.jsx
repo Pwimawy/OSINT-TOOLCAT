@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import LogoBlack from "../assets/logoblack.png";
 import ScrollDownIndicator from "./ScrollDown";
-import DecryptedText from "./DecryptedText";
 
 export default function Navbar({ setScrolledState }) {
   const [scrolled, setScrolled] = useState(false);
@@ -75,15 +74,10 @@ export default function Navbar({ setScrolledState }) {
           />
           {!scrolled && (
             <div style={{ marginTop: "2rem" }}>
-              <DecryptedText
-                text={`A CURATED COLLECTION OF TOOLS TO ASSIST WITH
-OPEN-SOURCE INTELLIGENCE INVESTIGATIONS`}
-                animateOn="view"
-                maxIterations={20}
-                revealDirection="center"
-                className="text-2xl text-gray-300 font-bold vt323-regular"
-                parentClassName="max-w-md opacity-100 transition-opacity duration-2000"
-              />
+              <p className="text-2xl text-center text-gray-300 mb-12 vt323-regular">
+                A CURATED COLLECTION OF TOOLS TO ASSIST WITH <br />
+                OPEN-SOURCE INTELLIGENCE INVESTIGATIONS
+              </p>
             </div>
           )}
           {!scrolled && <ScrollDownIndicator />}
